@@ -6,7 +6,7 @@ Created on Sat Apr  3 10:36:06 2021
 """
 
 # TALLER DE VECTORES
-# EJERCICIO 1
+# EJERCICIO 1 - TALLER DE VECTORES
 
 
 def funciones(v):
@@ -33,8 +33,7 @@ print(f'Mayor elemento del vector es: {Max_num}')
 print(f'Menor elemento del vector es: {Min_num}')
 
 
-# EJERCICIO 2
-
+# EJERCICIO 2 - TALLER DE VECTORES
 def funciones(v):
     pares, impares, primos = 0, 0, 0
     for elemento in v:
@@ -58,9 +57,7 @@ pares, impares, primos = funciones(v)
 print(f'{pares} pares, {impares} impares y {primos} primos')
 
 
-# Ejercicio 3
-
-
+# EJERCICIO 3 - TALLER DE VECTORES
 def funciones(a, b):
     import numpy as np
     if len(a) != len(b):
@@ -70,13 +67,14 @@ def funciones(a, b):
         resta = np.array(a) - np.array(b)
         return suma,  resta
 
+
 va = []
 vb = []
-tam = input("digíte el tamaño del vector 1: ")
+tam = input("Digíte el tamaño del vector 1: ")
 for i in range(int(tam)):
     elemento = int(input(f"Elemento  {i+1} del vector: "))
     va.append(elemento)
-tamm = input("digíte el tamaño del vector 2: ")
+tamm = input("Digíte el tamaño del vector 2: ")
 for i in range(int(tamm)):
     elemento = int(input(f"Elemento  {i+1} del vector: "))
     vb.append(elemento)
@@ -86,9 +84,7 @@ print(f' {va} + {vb} = {suma}')
 print(f' {va} - {vb} = {resta}')
 
 
-# Ejercicio 4
-
-
+# EJERCICIO 4 - TALLER DE VECTORES
 def funcion_repetidos(v):
     r = []
     for x in range(len(v)):
@@ -98,7 +94,8 @@ def funcion_repetidos(v):
                 coun = coun + 1
         r.append(coun)
     max_repetido = r.index(max(r))
-    return(v[mas_repetido])
+    return(v[max_repetido])
+
 
 tam = input("digíte el tamaño del vector: ")
 v = []
@@ -108,9 +105,7 @@ for i in range(int(tam)):
 r = funcion_repetidos(v)
 print(f'EL que más se repite es: {r}')
 
-
-
-# Ejercicio 5
+# EJERCICIO 5 - TALLER DE VECTORES
 
 
 def funcion(v):
@@ -123,10 +118,11 @@ def funcion(v):
             else:
                 s = s + v[x]
     else:
-        print("vector no es par")
+        print("El Vector no es par")
     return p, s
 
-tam = input("digíte el tamaño del vector: ")
+
+tam = input("Digíte el tamaño del vector: ")
 v = []
 for i in range(int(tam)):
     elemento = int(input(f"Elemento  {i+1} del vector: "))
@@ -136,7 +132,7 @@ print(f'Productoria primera mitad: {productoria}')
 print(f'Sumatoria segunda mitad: {productoria}')
 
 
-# Ejercicio 6
+# EJERCICIO 6 - TALLER DE VECTORES
 
 
 def funcion(v):
@@ -164,6 +160,7 @@ def funcion(v):
                     break
     return s
 
+
 tam = input("digíte el tamaño del vector: ")
 v = []
 for i in range(int(tam)):
@@ -178,7 +175,7 @@ else:
     print('No Es Simetrico')
 
 
-# Ejercicio 7
+# EJERCICIO 7 - TALLER DE VECTORES
 
 
 def operaciones(va, vb):
@@ -190,6 +187,7 @@ def operaciones(va, vb):
     diferen_B = vb - va
 
     return union, interseccion, diferen_A,  diferen_B
+
 
 va = []
 vb = []
@@ -209,3 +207,5 @@ Intersección: {interseccion}
 Diferencia A y B : {diferen_A}
 Diferencia B y A: {diferen_B}
 ''')
+
+# JABT
